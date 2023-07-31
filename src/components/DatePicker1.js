@@ -5,11 +5,14 @@ import DatePicker from "react-datepicker";
 function DatePicker1() {
   const [startDate, setStartDate] = useState(new Date());
   return (
-    <DatePicker
-      showIcon
-      selected={startDate}
-      onChange={(date) => setStartDate(date)}
-    />
+    <div>
+      <h2>Date Picker with Icon</h2>
+      <DatePicker
+        showIcon
+        selected={startDate}
+        onChange={(date) => setStartDate(date)}
+      />
+    </div>
   );
 }
 
