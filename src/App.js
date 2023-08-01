@@ -6,6 +6,7 @@ import DatePicker1 from "./components/DatePicker1";
 import "react-datepicker/dist/react-datepicker.css";
 import CalendarContainer1 from "./components/CalendarContainer1";
 import CalenderOpenStateCallbacks from "./components/CalenderOpenStateCallbacks";
+import MinMaxDate from "./components/MinMaxDate";
 
 function App() {
   const [startDate, setStartDate] = useState(new Date());
@@ -19,6 +20,7 @@ function App() {
       <DatePicker1></DatePicker1>
       <CalendarContainer1></CalendarContainer1>
       <CalenderOpenStateCallbacks></CalenderOpenStateCallbacks>
+      <MinMaxDate></MinMaxDate>
     </div>
   );
 }
