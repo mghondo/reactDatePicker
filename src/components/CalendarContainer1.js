@@ -18,13 +18,15 @@ const CalendarContainer1 = () => {
     );
   };
   return (
-    <div>
+    <div className="col-sm-6 card">
+      <br />
       <h2>Calendar Container</h2>
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
         calendarContainer={MyContainer}
       />
+      <br />
     </div>
   );
 };

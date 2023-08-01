@@ -8,7 +8,8 @@ const CalenderOpenStateCallbacks = () => {
   const handleCalendarOpen = () => console.log("Calendar opened");
 
   return (
-    <div>
+    <div className="col-sm-6 card">
+      <br />
       <h2>Open State Callbacks</h2>
       <DatePicker
         selected={date}
@@ -16,6 +17,7 @@ const CalenderOpenStateCallbacks = () => {
         onCalendarClose={handleCalendarClose}
         onCalendarOpen={handleCalendarOpen}
       />
+      <br />
     </div>
   );
 };
