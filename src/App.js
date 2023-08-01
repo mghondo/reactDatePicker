@@ -10,7 +10,7 @@ import MinMaxDate from "./components/MinMaxDate";
 import CloseOnScroll from "./components/CloseOnScroll";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
-// import CustomHeader from "./components/CustomHeader";
+import CustomHeader from "./components/CustomHeader";
 import FilterTimes from "./components/FilterTimes";
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
         <CalenderOpenStateCallbacks></CalenderOpenStateCallbacks>
         <MinMaxDate></MinMaxDate>
         <CloseOnScroll></CloseOnScroll>
-        {/* <CustomHeader></CustomHeader> */}
+        <CustomHeader></CustomHeader>
         <FilterTimes></FilterTimes>
       </div>
     </div>
