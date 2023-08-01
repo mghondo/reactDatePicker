@@ -12,20 +12,25 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 import CustomHeader from "./components/CustomHeader";
 import FilterTimes from "./components/FilterTimes";
+import ClearInput from "./components/ClearInput";
+import SelectTime from "./components/SelectTime";
+import RangeYearPicker from "./components/RangeYearPicker";
 
 function App() {
   const [startDate, setStartDate] = useState(new Date());
   return (
     <div className="App container">
+      <br /> <br /> <br /> <br /> <br /> <br />
       <div className="row">
         <div className="col-sm-12 card">
+          <br /> <br /> <br />
           <h1>Date Picking Options</h1>
           <br />
           <DatePicker
             selected={startDate}
             onChange={(date) => setStartDate(date)}
           />
-          <br />
+          <br /> <br />
         </div>
         <br />
         <DatePicker1></DatePicker1>
@@ -35,7 +40,11 @@ function App() {
         <CloseOnScroll></CloseOnScroll>
         <CustomHeader></CustomHeader>
         <FilterTimes></FilterTimes>
+        <ClearInput></ClearInput>
+        <SelectTime></SelectTime>
+        <RangeYearPicker></RangeYearPicker>
       </div>
+      <br /> <br /> <br /> <br /> <br /> <br />
     </div>
   );
 }

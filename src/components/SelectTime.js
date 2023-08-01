@@ -4,31 +4,25 @@ import { useState } from "react";
 import setHours from "date-fns/setHours";
 import setMinutes from "date-fns/setMinutes";
 
-const FilterTimes = () => {
-  const [startDate, setStartDate] = useState(
-    setHours(setMinutes(new Date(), 0), 9)
-  );
-  const filterPassedTime = (time) => {
-    const currentDate = new Date();
-    const selectedDate = new Date(time);
-
-    return currentDate.getTime() < selectedDate.getTime();
-  };
+const SelectTime = () => {
+  const [startDate, setStartDate] = useState(new Date());
   return (
     <div className="col-sm-6 card">
       <br />
-      <h2>Clear Input</h2>
-      <br />
+      <h2>Select Time</h2>
       <DatePicker
         selected={startDate}
         onChange={(date) => setStartDate(date)}
         showTimeSelect
-        filterTime={filterPassedTime}
+        timeFormat="HH:mm"
+        timeIntervals={15}
+        timeCaption="time"
         dateFormat="MMMM d, yyyy h:mm aa"
       />
+      <br />
       <br />
     </div>
   );
 };
 
-export default FilterTimes;
+export default SelectTime;
